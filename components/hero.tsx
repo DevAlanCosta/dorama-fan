@@ -4,10 +4,11 @@ import { Reveal } from "@/components/reveal"
 import { CHECKOUT_URL, posters } from "@/lib/site"
 
 const trustPoints = [
-  "Pagamento único",
-  "Acesso vitalício",
-  "Atualizações frequentes",
-  "Suporte via WhatsApp",
+  "Canal VIP no Telegram",
+  "Download para assistir offline",
+  "Catálogo organizado por busca",
+  "Zero anúncios",
+  "Atualizações diárias",
 ]
 
 export function Hero() {
@@ -32,21 +33,22 @@ export function Hero() {
         <div className="text-center lg:text-left">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
-              <span className="h-1.5 w-1.5 rounded-full bg-pink" />O seu universo de doramas em um só lugar
+              <span className="h-1.5 w-1.5 rounded-full bg-pink" />Comunidade VIP de doramas no Telegram
             </span>
           </Reveal>
 
           <Reveal delay={80}>
             <h1 className="mt-5 text-balance font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-              Maratone seus doramas favoritos{" "}
-              <span className="text-gradient">sem limites.</span>
+              Sua comunidade VIP de doramas{" "}
+              <span className="text-gradient">no Telegram.</span>
             </h1>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="mx-auto mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg lg:mx-0">
-              Tenha acesso a um catálogo completo de doramas, lançamentos e conteúdos para maratonar
-              quando quiser, com acesso vitalício e sem mensalidade.
+              Entre no nosso Canal VIP no Telegram e tenha um catálogo completo de doramas organizado
+              por busca, com download para assistir offline, sem anúncios e com novos títulos todos os
+              dias.
             </p>
           </Reveal>
 
