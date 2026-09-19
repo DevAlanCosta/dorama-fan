@@ -1,6 +1,6 @@
 import { Check, Flame, Lock, Zap, CreditCard } from "lucide-react"
 import { Reveal } from "@/components/reveal"
-import { CHECKOUT_URL } from "@/lib/site"
+import { CHECKOUT_URL_BASIC, CHECKOUT_URL_PREMIUM } from "@/lib/site"
 
 const basic = [
   "Catálogo de doramas",
@@ -59,7 +59,7 @@ export function Pricing() {
                 ))}
               </ul>
               <a
-                href={CHECKOUT_URL}
+                href={CHECKOUT_URL_BASIC}
                 className="mt-8 flex w-full items-center justify-center rounded-full border border-border bg-surface px-6 py-3.5 text-sm font-bold uppercase tracking-wide transition-colors hover:border-pink/50 hover:text-pink-light"
               >
                 Quero o básico
@@ -91,7 +91,7 @@ export function Pricing() {
               </ul>
 
               <a
-                href={CHECKOUT_URL}
+                href={CHECKOUT_URL_PREMIUM}
                 className="mt-8 flex w-full items-center justify-center rounded-full bg-gradient-to-r from-pink to-purple px-6 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-[0_0_40px_-8px_rgba(255,61,129,0.8)] transition-transform duration-200 hover:scale-[1.02] active:scale-95"
               >
                 Quero meu acesso Premium

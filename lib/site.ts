@@ -1,4 +1,6 @@
 export const CHECKOUT_URL = "#planos"
+export const CHECKOUT_URL_BASIC = "https://pay.cakto.com.br/52w2bsj_1122754"
+export const CHECKOUT_URL_PREMIUM = "https://pay.cakto.com.br/k6uuqnh_1122764"
 export const WHATSAPP_URL = "#"
 
 export const posters = [
