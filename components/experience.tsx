@@ -1,14 +1,14 @@
 import Image from "next/image"
-import { Check, ArrowRight, Search } from "lucide-react"
+import { Check, ArrowRight, Search, Send } from "lucide-react"
 import { Reveal } from "@/components/reveal"
 import { CHECKOUT_URL, posters } from "@/lib/site"
 
 const points = [
-  "Catálogo organizado",
-  "Busca rápida",
-  "Novos títulos",
-  "Interface simples",
-  "Acesso em diferentes dispositivos",
+  "Acesso direto pelo Telegram",
+  "Catálogo organizado por busca",
+  "Novos títulos todos os dias",
+  "Download para assistir offline",
+  "Sem anúncios e sem complicação",
 ]
 
 export function Experience() {
@@ -31,27 +31,30 @@ export function Experience() {
             <div className="relative mx-auto w-[260px] rounded-[2.5rem] border border-white/10 bg-[#0c0c14] p-3 shadow-2xl sm:w-[290px]">
               <div className="absolute left-1/2 top-3 z-10 h-5 w-24 -translate-x-1/2 rounded-full bg-black" />
               <div className="overflow-hidden rounded-[2rem] bg-background">
-                {/* app header */}
-                <div className="flex items-center justify-between px-4 pt-8 pb-3">
-                  <span className="text-sm font-bold">
-                    Dorama<span className="text-gradient">TVFlix</span>
+                {/* telegram channel header */}
+                <div className="flex items-center gap-3 border-b border-border px-4 pt-8 pb-3">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-pink to-purple">
+                    <Send className="h-4 w-4 text-white" />
                   </span>
-                  <span className="h-7 w-7 rounded-full bg-gradient-to-br from-pink to-purple" />
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate text-sm font-bold leading-tight">Canal VIP DoramaTV</span>
+                    <span className="block text-[10px] text-muted-foreground">canal • 12.480 membros</span>
+                  </span>
                 </div>
                 {/* search */}
-                <div className="mx-4 flex items-center gap-2 rounded-xl border border-border bg-surface px-3 py-2">
+                <div className="mx-4 mt-3 flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-2">
                   <Search className="h-3.5 w-3.5 text-muted-foreground" />
-                  <span className="text-xs text-muted-foreground">Buscar doramas...</span>
+                  <span className="text-xs text-muted-foreground">Buscar no canal...</span>
                 </div>
-                {/* featured */}
+                {/* pinned post */}
                 <div className="relative mx-4 mt-3 aspect-[16/10] overflow-hidden rounded-xl">
-                  <Image src={posters[2].src || "/placeholder.svg"} alt="Destaque do catálogo" fill sizes="290px" className="object-cover" />
+                  <Image src={posters[2].src || "/placeholder.svg"} alt="Post fixado do canal" fill sizes="290px" className="object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                   <span className="absolute bottom-2 left-2 rounded-full bg-pink px-2 py-0.5 text-[9px] font-bold text-white">
-                    EM ALTA
+                    POST FIXADO
                   </span>
                 </div>
-                {/* grid */}
+                {/* catalog grid */}
                 <div className="grid grid-cols-3 gap-2 p-4">
                   {grid.map((p) => (
                     <div key={p.title} className="relative aspect-[2/3] overflow-hidden rounded-lg">
