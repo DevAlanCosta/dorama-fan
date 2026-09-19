@@ -1,6 +1,6 @@
 import { Check, Flame, Lock, Zap, CreditCard } from "lucide-react"
 import { Reveal } from "@/components/reveal"
-import { CHECKOUT_URL_PREMIUM } from "@/lib/site"
+import { CHECKOUT_URL_BASIC } from "@/lib/site"
 
 const benefits = [
   "Catálogo completo de doramas no Telegram",
@@ -67,7 +67,7 @@ export function Pricing() {
               </ul>
 
               <a
-                href={CHECKOUT_URL_PREMIUM}
+                href={CHECKOUT_URL_BASIC}
                 className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-pink to-purple px-6 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-[0_0_40px_-8px_rgba(255,61,129,0.8)] transition-transform duration-200 hover:scale-[1.02] active:scale-95"
               >
                 Quero meu acesso agora <span aria-hidden>&#8594;</span>
