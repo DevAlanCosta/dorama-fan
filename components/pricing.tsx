@@ -52,7 +52,7 @@ export function Pricing() {
                   De <span className="line-through">R$ 29,90</span> por apenas
                 </span>
                 <div className="mt-1 flex items-end gap-2">
-                  <span className="text-5xl font-extrabold sm:text-6xl">R$ 10,90</span>
+                  <span className="text-5xl font-extrabold sm:text-6xl">R$ 12,90</span>
                 </div>
                 <p className="mt-2 text-sm text-muted-foreground">Pagamento único • Sem mensalidades</p>
               </div>
