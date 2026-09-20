@@ -32,8 +32,8 @@ export function ValueComparison() {
               <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Em 12 meses
               </p>
-              <p className="mt-3 text-3xl font-extrabold text-muted-foreground">R$ 130,80</p>
-              <p className="mt-2 text-sm text-muted-foreground">12 pagamentos de R$ 10,90</p>
+              <p className="mt-3 text-3xl font-extrabold text-muted-foreground">R$ 238,80</p>
+              <p className="mt-2 text-sm text-muted-foreground">12 pagamentos de R$ 29,90</p>
               <p className="mt-1 text-sm font-semibold text-muted-foreground">Todo ano</p>
             </div>
           </Reveal>
