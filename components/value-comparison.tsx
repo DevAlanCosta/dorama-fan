@@ -20,10 +20,10 @@ export function ValueComparison() {
                 Assinatura mensal
               </p>
               <p className="mt-3 text-3xl font-extrabold text-muted-foreground">
-                R$ 19,90<span className="text-base font-medium">/mês</span>
+                R$ 29,90<span className="text-base font-medium">/mês</span>
               </p>
               <p className="mt-2 text-sm text-muted-foreground">Cobrança recorrente</p>
-              <p className="mt-1 text-sm font-semibold text-muted-foreground">R$ 238,80 ao ano</p>
+              <p className="mt-1 text-sm font-semibold text-muted-foreground">R$ 358,80 ao ano</p>
             </div>
           </Reveal>
 
@@ -32,7 +32,7 @@ export function ValueComparison() {
               <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Em 12 meses
               </p>
-              <p className="mt-3 text-3xl font-extrabold text-muted-foreground">R$ 238,80</p>
+              <p className="mt-3 text-3xl font-extrabold text-muted-foreground">R$ 358,80</p>
               <p className="mt-2 text-sm text-muted-foreground">12 pagamentos de R$ 29,90</p>
               <p className="mt-1 text-sm font-semibold text-muted-foreground">Todo ano</p>
             </div>
