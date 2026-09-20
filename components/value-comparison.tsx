@@ -45,7 +45,7 @@ export function ValueComparison() {
               </p>
               <p className="mt-3 flex items-center justify-center gap-2">
                 <span className="text-lg font-semibold text-muted-foreground line-through">R$ 29,90</span>
-                <span className="text-3xl font-extrabold text-gradient">R$ 19,90</span>
+                <span className="text-3xl font-extrabold text-gradient">R$ 10,90</span>
               </p>
               <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-pink-light">
                 Pagamento único

@@ -20,7 +20,7 @@ export function SpecialOffer() {
               <Flame className="h-3.5 w-3.5" /> Oferta especial
             </span>
             <h2 className="mt-5 text-balance font-display text-2xl font-extrabold tracking-tight sm:text-3xl">
-              Garanta seu acesso por apenas <span className="text-gradient">R$ 19,90</span>
+              Garanta seu acesso por apenas <span className="text-gradient">R$ 10,90</span>
             </h2>
             <p className="mt-3 text-sm font-medium text-muted-foreground sm:text-base">
               Pagamento único • Acesso vitalício

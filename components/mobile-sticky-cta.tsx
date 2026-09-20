@@ -25,7 +25,7 @@ export function MobileStickyCta() {
         href={CHECKOUT_URL}
         className="flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-pink to-purple px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-[0_0_30px_-8px_rgba(255,61,129,0.8)] active:scale-95"
       >
-        Quero meu acesso • R$ 19,90
+        Quero meu acesso • R$ 10,90
       </a>
     </div>
   )
