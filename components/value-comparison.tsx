@@ -50,7 +50,7 @@ export function ValueComparison() {
               <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-pink-light">
                 Pagamento único
               </p>
-              <p className="mt-1 text-sm text-muted-foreground">Acesso vitalício para sempre.</p>
+              <p className="mt-1 text-sm text-muted-foreground">Acesso vitalício para sempre</p>
             </div>
           </Reveal>
         </div>
