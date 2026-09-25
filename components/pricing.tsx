@@ -2,7 +2,7 @@ import { Check, Flame, Lock, Zap, CreditCard } from "lucide-react"
 import { Reveal } from "@/components/reveal"
 
 // Substitui com os teus links reais de checkout da Cactus
-const CHECKOUT_URL_MENSAL = "https://pay.cactus.com.br/teu-link-mensal"
+const CHECKOUT_URL_MENSAL = "https://pay.cakto.com.br/52w2bsj_1122754"
 const CHECKOUT_URL_VITALICIO = "https://pay.cactus.com.br/teu-link-vitalicio"
 
 const benefits = [
