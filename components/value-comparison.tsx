@@ -20,10 +20,10 @@ export function ValueComparison() {
                 Assinatura mensal
               </p>
               <p className="mt-3 text-3xl font-extrabold text-muted-foreground">
-                R$ 29,90<span className="text-base font-medium">/mês</span>
+                R$ 59,90<span className="text-base font-medium">/mês</span>
               </p>
               <p className="mt-2 text-sm text-muted-foreground">Cobrança recorrente</p>
-              <p className="mt-1 text-sm font-semibold text-muted-foreground">R$ 358,80 ao ano</p>
+              <p className="mt-1 text-sm font-semibold text-muted-foreground">R$ 718,80 ao ano</p>
             </div>
           </Reveal>
 
@@ -32,8 +32,8 @@ export function ValueComparison() {
               <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Em 12 meses
               </p>
-              <p className="mt-3 text-3xl font-extrabold text-muted-foreground">R$ 358,80</p>
-              <p className="mt-2 text-sm text-muted-foreground">12 pagamentos de R$ 29,90</p>
+              <p className="mt-3 text-3xl font-extrabold text-muted-foreground">R$ 718,80</p>
+              <p className="mt-2 text-sm text-muted-foreground">12 pagamentos de R$ 59,90</p>
               <p className="mt-1 text-sm font-semibold text-muted-foreground">Todo ano</p>
             </div>
           </Reveal>
@@ -44,8 +44,8 @@ export function ValueComparison() {
                 DoramaTVFlix
               </p>
               <p className="mt-3 flex items-center justify-center gap-2">
-                <span className="text-lg font-semibold text-muted-foreground line-through">R$ 29,90</span>
-                <span className="text-3xl font-extrabold text-gradient">R$ 12,90</span>
+                <span className="text-lg font-semibold text-muted-foreground line-through">R$ 59,90</span>
+                <span className="text-3xl font-extrabold text-gradient">R$ 29,90</span>
               </p>
               <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-pink-light">
                 Pagamento único
