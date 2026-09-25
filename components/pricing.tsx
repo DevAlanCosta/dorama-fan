@@ -3,7 +3,7 @@ import { Reveal } from "@/components/reveal"
 
 // Substitui com os teus links reais de checkout da Cactus
 const CHECKOUT_URL_MENSAL = "https://pay.cakto.com.br/52w2bsj_1122754"
-const CHECKOUT_URL_VITALICIO = "https://pay.cactus.com.br/teu-link-vitalicio"
+const CHECKOUT_URL_VITALICIO = "https://pay.cakto.com.br/y7wmbvn_1137148"
 
 const benefits = [
   "Catálogo completo de doramas no Telegram",
