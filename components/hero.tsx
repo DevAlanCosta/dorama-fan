@@ -82,9 +82,9 @@ export function Hero() {
             </ul>
           </Reveal>
 
-          {/* Vídeo do Vimeo expandido para cobrir toda a largura da coluna da esquerda */}
+          {/* Vídeo do Vimeo esticado para ocupar toda a largura máxima do bloco esquerdo */}
           <Reveal delay={380}>
-            <div className="mt-8 w-full">
+            <div className="mt-8 w-full max-w-xl mx-auto lg:mx-0">
               <div className="relative aspect-video w-full overflow-hidden rounded-2xl ring-2 ring-pink/50 shadow-[0_0_30px_-5px_rgba(255,61,129,0.4)] bg-black">
                 <iframe
                   title="vimeo-player"
