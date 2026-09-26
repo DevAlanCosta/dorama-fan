@@ -82,9 +82,9 @@ export function Hero() {
             </ul>
           </Reveal>
 
-          {/* Vídeo do Vimeo inserido logo abaixo dos benefícios, ocupando a largura da lateral esquerda */}
+          {/* Vídeo do Vimeo expandido para cobrir toda a largura da coluna da esquerda */}
           <Reveal delay={380}>
-            <div className="mt-8 mx-auto lg:mx-0 max-w-md">
+            <div className="mt-8 w-full">
               <div className="relative aspect-video w-full overflow-hidden rounded-2xl ring-2 ring-pink/50 shadow-[0_0_30px_-5px_rgba(255,61,129,0.4)] bg-black">
                 <iframe
                   title="vimeo-player"
@@ -98,7 +98,7 @@ export function Hero() {
           </Reveal>
         </div>
 
-        {/* poster composition (Coluna da Direita - Mantém os pósteres originais intactos) */}
+        {/* poster composition (Coluna da Direita) */}
         <Reveal delay={200} className="relative">
           <div className="relative mx-auto flex max-w-md items-center justify-center gap-3 sm:max-w-lg lg:max-w-none">
             {/* left stack */}
@@ -108,7 +108,7 @@ export function Hero() {
               ))}
             </div>
 
-            {/* center (póster original de volta ao centro) */}
+            {/* center */}
             <div className="relative">
               <PosterCard p={center} featured className="w-48 sm:w-52 lg:w-60" />
               <span className="absolute -bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-background/90 px-4 py-2 text-xs font-semibold shadow-lg ring-1 ring-border backdrop-blur">
