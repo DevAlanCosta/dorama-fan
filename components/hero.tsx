@@ -4,11 +4,11 @@ import { Reveal } from "@/components/reveal"
 import { CHECKOUT_URL, posters } from "@/lib/site"
 
 const trustPoints = [
-  "Canal VIP no Telegram",
+  "+5.000 títulos disponíveis",
+  "Zero anúncios irritantes",
+  "Dublados e legendados",
   "Download para assistir offline",
-  "Catálogo organizado por busca",
-  "Zero anúncios",
-  "Atualizações diárias",
+  "Acesso vitalício",
 ]
 
 export function Hero() {
@@ -33,22 +33,20 @@ export function Hero() {
         <div className="text-center lg:text-left">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
-              <span className="h-1.5 w-1.5 rounded-full bg-pink" />Comunidade VIP de doramas no Telegram
+              <span className="h-1.5 w-1.5 rounded-full bg-pink" /> Para quem ama doramas 💗
             </span>
           </Reveal>
 
           <Reveal delay={80}>
             <h1 className="mt-5 text-balance font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-              Sua comunidade VIP de doramas{" "}
-              <span className="text-gradient">no Telegram.</span>
+              Todos os seus doramas em um{" "}
+              <span className="text-gradient">só lugar.</span>
             </h1>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="mx-auto mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg lg:mx-0">
-              Entre no nosso Canal VIP no Telegram e tenha um catálogo completo de doramas organizado
-              por busca, com download para assistir offline, sem anúncios e com novos títulos todos os
-              dias.
+              Pare de pagar várias plataformas para acompanhar as histórias que você ama. Tenha acesso completo a milhares de títulos, lançamentos e episódios organizados para assistir quando e onde quiser.
             </p>
           </Reveal>
 
@@ -82,7 +80,7 @@ export function Hero() {
             </ul>
           </Reveal>
 
-          {/* Vídeo do Vimeo esticado para ocupar toda a largura máxima do bloco esquerdo */}
+          {/* Vídeo do Vimeo */}
           <Reveal delay={380}>
             <div className="mt-8 w-full max-w-xl mx-auto lg:mx-0">
               <div className="relative aspect-video w-full overflow-hidden rounded-2xl ring-2 ring-pink/50 shadow-[0_0_30px_-5px_rgba(255,61,129,0.4)] bg-black">
