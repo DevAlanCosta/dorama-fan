@@ -79,82 +79,26 @@ export function Hero() {
               ))}
             </ul>
           </Reveal>
-
-          {/* Vídeo do Vimeo */}
-          <Reveal delay={380}>
-            <div className="mt-8 w-full max-w-xl mx-auto lg:mx-0">
-              <div className="relative aspect-video w-full overflow-hidden rounded-2xl ring-2 ring-pink/50 shadow-[0_0_30px_-5px_rgba(255,61,129,0.4)] bg-black">
-                <iframe
-                  title="vimeo-player"
-                  src="https://player.vimeo.com/video/1226000802?autoplay=1&muted=1&api=1&loop=1&title=0&byline=0&portrait=0"
-                  className="absolute inset-0 h-full w-full border-0 object-cover"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          </Reveal>
         </div>
 
-        {/* poster composition (Coluna da Direita) */}
+        {/* Vídeo do Vimeo em destaque na Coluna da Direita (substituindo a imagem estática) */}
         <Reveal delay={200} className="relative">
-          <div className="relative mx-auto flex max-w-md items-center justify-center gap-3 sm:max-w-lg lg:max-w-none">
-            {/* left stack */}
-            <div className="hidden flex-col gap-4 sm:flex">
-              {left.map((p) => (
-                <PosterCard key={p.title} p={p} className="w-28 opacity-70 lg:w-32" />
-              ))}
+          <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
+            <div className="relative aspect-video w-full overflow-hidden rounded-2xl ring-2 ring-pink/50 shadow-[0_0_40px_-5px_rgba(255,61,129,0.4)] bg-black">
+              <iframe
+                title="vimeo-player"
+                src="https://player.vimeo.com/video/1226000802?autoplay=1&muted=1&api=1&loop=1&title=0&byline=0&portrait=0"
+                className="absolute inset-0 h-full w-full border-0 object-cover"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                allowFullScreen
+              />
             </div>
-
-            {/* center */}
-            <div className="relative">
-              <PosterCard p={center} featured className="w-48 sm:w-52 lg:w-60" />
-              <span className="absolute -bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-background/90 px-4 py-2 text-xs font-semibold shadow-lg ring-1 ring-border backdrop-blur">
-                <Play className="h-3.5 w-3.5 fill-pink text-pink" /> +5.000 títulos
-              </span>
-            </div>
-
-            {/* right stack */}
-            <div className="hidden flex-col gap-4 sm:flex">
-              {right.map((p) => (
-                <PosterCard key={p.title} p={p} className="w-28 opacity-70 lg:w-32" />
-              ))}
-            </div>
+            <span className="absolute -bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-background/90 px-4 py-2 text-xs font-semibold shadow-lg ring-1 ring-border backdrop-blur z-10">
+              <Play className="h-3.5 w-3.5 fill-pink text-pink" /> Demonstração Prática da Plataforma
+            </span>
           </div>
         </Reveal>
       </div>
     </section>
-  )
-}
-
-function PosterCard({
-  p,
-  className,
-  featured,
-}: {
-  p: { src: string; title: string; genre: string }
-  className?: string
-  featured?: boolean
-}) {
-  return (
-    <div
-      className={`relative aspect-[2/3] overflow-hidden rounded-2xl ring-1 ring-border ${
-        featured ? "glow-pink shadow-2xl" : "shadow-xl"
-      } ${className ?? ""}`}
-    >
-      <Image
-        src={p.src || "/placeholder.svg"}
-        alt={`Capa do dorama ${p.title}`}
-        fill
-        sizes="240px"
-        priority={featured}
-        className="object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 p-3">
-        <p className="text-[10px] font-medium uppercase tracking-wider text-pink-light">{p.genre}</p>
-        <p className="text-sm font-bold leading-tight text-white">{p.title}</p>
-      </div>
-    </div>
   )
 }
