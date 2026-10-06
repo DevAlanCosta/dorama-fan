@@ -9,16 +9,16 @@ const stats = [
 
 export function TrustBar() {
   return (
-    <section className="relative border-y border-border bg-surface/40">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <section className="relative border-y border-border/60 bg-gradient-to-r from-surface/60 via-surface/80 to-surface/60 py-8 backdrop-blur">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="flex flex-col items-center gap-6 lg:flex-row lg:justify-between">
           <div className="flex flex-col items-center gap-2 text-center lg:items-start lg:text-left">
-            <div className="flex items-center gap-1" aria-label="Avaliação cinco estrelas">
+            <div className="flex items-center gap-1.5" aria-label="Avaliação cinco estrelas">
               {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-pink text-pink" />
+                <Star key={i} className="h-4 w-4 fill-pink text-pink drop-shadow-[0_0_8px_rgba(255,61,129,0.5)]" />
               ))}
             </div>
-            <p className="text-sm font-medium text-muted-foreground sm:text-base">
+            <p className="text-sm font-semibold tracking-wide text-foreground sm:text-base">
               Milhares de apaixonados por doramas já fazem parte
             </p>
           </div>
@@ -27,10 +27,11 @@ export function TrustBar() {
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="rounded-2xl border border-border bg-surface/60 px-3 py-4 text-center backdrop-blur"
+                className="group relative overflow-hidden rounded-2xl border border-pink/30 bg-surface/80 px-4 py-4 text-center shadow-[0_0_20px_-5px_rgba(255,61,129,0.2)] transition-all duration-300 hover:border-pink/60 hover:shadow-[0_0_25px_-3px_rgba(255,61,129,0.4)] backdrop-blur"
               >
-                <p className="text-lg font-extrabold text-gradient sm:text-2xl">{s.value}</p>
-                <p className="mt-1 text-xs text-muted-foreground sm:text-sm">{s.label}</p>
+                <div className="absolute inset-0 bg-gradient-to-b from-pink/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <p className="relative z-10 text-xl font-extrabold text-gradient sm:text-3xl">{s.value}</p>
+                <p className="relative z-10 mt-1 text-xs font-medium text-muted-foreground sm:text-sm">{s.label}</p>
               </div>
             ))}
           </div>
