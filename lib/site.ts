@@ -6,7 +6,7 @@ export const WHATSAPP_URL = "#"
 export const posters = [
   { src: "/posters/1.png", title: "Luz da Madrugada", genre: "Romance" },
   { src: "/posters/2.png", title: "Estações do Coração", genre: "Drama" },
-  { src: "/posters/poster-launch.png", title: "Sob as Luzes de Seul", genre: "Lançamento" },
+  { src: "/posters/3", title: "Sob as Luzes de Seul", genre: "Lançamento" },
   { src: "/posters/poster-classic.png", title: "Primavera Perdida", genre: "Clássico" },
   { src: "/posters/poster-kdrama.png", title: "Nossos Dias de Outono", genre: "K-Drama" },
   { src: "/posters/poster-suspense.png", title: "O Último Corredor", genre: "Suspense" },
@@ -14,9 +14,9 @@ export const posters = [
 ]
 
 export const categories = [
-  { emoji: "❤️", label: "Romance", poster: "/posters/poster-romance.png" },
-  { emoji: "🎭", label: "Drama", poster: "/posters/poster-drama.png" },
-  { emoji: "🔥", label: "Lançamentos", poster: "/posters/poster-launch.png" },
+  { emoji: "❤️", label: "Romance", poster: "/posters/1.png" },
+  { emoji: "🎭", label: "Drama", poster: "/posters/2.png" },
+  { emoji: "🔥", label: "Lançamentos", poster: "/p3.png" },
   { emoji: "✨", label: "Clássicos", poster: "/posters/poster-classic.png" },
   { emoji: "🇰🇷", label: "K-Dramas", poster: "/posters/poster-kdrama.png" },
   { emoji: "🌸", label: "Favoritos", poster: "/posters/poster-favorite.png" },
