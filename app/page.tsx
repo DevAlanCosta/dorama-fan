@@ -6,7 +6,7 @@ import { Benefits } from "@/components/benefits"
 import { Experience } from "@/components/experience"
 import { Pricing } from "@/components/pricing"
 // import { ValueComparison } from "@/components/value-comparison"
-import { SpecialOffer } from "@/components/special-offer"
+// import { SpecialOffer } from "@/components/special-offer"
 import { Testimonials } from "@/components/testimonials"
 import { Guarantee } from "@/components/guarantee"
 import { FAQ } from "@/components/faq"
@@ -25,7 +25,7 @@ export default function Page() {
       <Experience />
       <Pricing />
       {/* <ValueComparison /> */}
-      <SpecialOffer />
+      {/* <SpecialOffer /> */}
       <Testimonials />
       <Guarantee />
       <FAQ />
