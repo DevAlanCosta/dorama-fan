@@ -4,7 +4,7 @@ import { categories } from "@/lib/site"
 
 export function CatalogSection() {
   return (
-    <section id="catalogo" className="relative py-20 sm:py-24">
+    <section id="catalogo" className="relative py-20 sm:py-24 overflow-hidden">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
@@ -16,15 +16,19 @@ export function CatalogSection() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-          {categories.map((cat, i) => (
-            <Reveal key={cat.label} delay={i * 60}>
-              <article className="group relative aspect-[3/4] overflow-hidden rounded-2xl ring-1 ring-border transition-transform duration-300 hover:-translate-y-1.5">
+        {/* Carrossel Horizontal Estilo Netflix */}
+        <Reveal delay={150} className="mt-12">
+          <div className="flex gap-4 overflow-x-auto pb-6 pt-2 scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {categories.map((cat, i) => (
+              <div
+                key={cat.label}
+                className="group relative min-w-[160px] sm:min-w-[200px] flex-shrink-0 aspect-[3/4] overflow-hidden rounded-2xl ring-1 ring-border transition-all duration-300 hover:scale-105 hover:border-pink/50 hover:shadow-[0_0_25px_rgba(255,61,129,0.3)]"
+              >
                 <Image
                   src={cat.poster || "/placeholder.svg"}
                   alt={`Categoria ${cat.label}`}
                   fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  sizes="(max-width: 640px) 160px, 200px"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
@@ -35,10 +39,10 @@ export function CatalogSection() {
                   <span aria-hidden className="text-lg">{cat.emoji}</span>
                   <span className="text-sm font-bold text-white">{cat.label}</span>
                 </div>
-              </article>
-            </Reveal>
-          ))}
-        </div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   )
