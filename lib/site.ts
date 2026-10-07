@@ -4,8 +4,8 @@ export const CHECKOUT_URL_PREMIUM = "https://pay.cakto.com.br/k6uuqnh_1122764"
 export const WHATSAPP_URL = "#"
 
 export const posters = [
-  { src: "/posters/poster-romance.png", title: "Luz da Madrugada", genre: "Romance" },
-  { src: "/posters/poster-drama.png", title: "Estações do Coração", genre: "Drama" },
+  { src: "/posters/1.png", title: "Luz da Madrugada", genre: "Romance" },
+  { src: "/posters/2.png", title: "Estações do Coração", genre: "Drama" },
   { src: "/posters/poster-launch.png", title: "Sob as Luzes de Seul", genre: "Lançamento" },
   { src: "/posters/poster-classic.png", title: "Primavera Perdida", genre: "Clássico" },
   { src: "/posters/poster-kdrama.png", title: "Nossos Dias de Outono", genre: "K-Drama" },
