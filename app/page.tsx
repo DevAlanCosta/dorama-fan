@@ -24,7 +24,7 @@ export default function Page() {
       <Benefits />
       <Experience />
       <Pricing />
-      <ValueComparison />
+      {/* <ValueComparison /> */}
       <SpecialOffer />
       <Testimonials />
       <Guarantee />
