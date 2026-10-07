@@ -7,19 +7,24 @@ export const posters = [
   { src: "/posters/1.png", title: "Luz da Madrugada", genre: "Romance" },
   { src: "/posters/2.png", title: "Estações do Coração", genre: "Drama" },
   { src: "/posters/3.png", title: "Sob as Luzes de Seul", genre: "Lançamento" },
-  { src: "/posters/poster-classic.png", title: "Primavera Perdida", genre: "Clássico" },
-  { src: "/posters/poster-kdrama.png", title: "Nossos Dias de Outono", genre: "K-Drama" },
-  { src: "/posters/poster-suspense.png", title: "O Último Corredor", genre: "Suspense" },
-  { src: "/posters/poster-favorite.png", title: "Primeira Neve", genre: "Favorito" },
+  { src: "/posters/4.png", title: "Primavera Perdida", genre: "Clássico" },
+  { src: "/posters/5.png", title: "Nossos Dias de Outono", genre: "K-Drama" },
+  { src: "/posters/6.png", title: "O Último Corredor", genre: "Suspense" },
+  { src: "/posters/7.png", title: "Primeira Neve", genre: "Favorito" },
+  { src: "/posters/8.png", title: "O Último Corredor", genre: "Suspense" },
+  { src: "/posters/9.png", title: "Primeira Neve", genre: "Favorito" },
 ]
 
 export const categories = [
   { emoji: "❤️", label: "Romance", poster: "/posters/1.png" },
   { emoji: "🎭", label: "Drama", poster: "/posters/2.png" },
   { emoji: "🔥", label: "Lançamentos", poster: "/3.png" },
-  { emoji: "✨", label: "Clássicos", poster: "/posters/poster-classic.png" },
-  { emoji: "🇰🇷", label: "K-Dramas", poster: "/posters/poster-kdrama.png" },
-  { emoji: "🌸", label: "Favoritos", poster: "/posters/poster-favorite.png" },
+  { emoji: "✨", label: "Clássicos", poster: "/posters/4.png" },
+  { emoji: "🇰🇷", label: "K-Dramas", poster: "/posters/5.png" },
+  { emoji: "🌸", label: "Favoritos", poster: "/posters/6.png" },
+  { emoji: "✨", label: "Clássicos", poster: "/posters/7.png" },
+  { emoji: "🇰🇷", label: "K-Dramas", poster: "/posters/8.png" },
+  { emoji: "🌸", label: "Favoritos", poster: "/posters/9.png" },
 ]
 
 // ---------------------------------------------------------------------------
