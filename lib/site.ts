@@ -16,15 +16,15 @@ export const posters = [
 ]
 
 export const categories = [
-  { emoji: "❤️", label: "Romance", poster: "/posters/1.png" },
-  { emoji: "🎭", label: "Drama", poster: "/posters/2.png" },
-  { emoji: "🔥", label: "Lançamentos", poster: "/3.png" },
-  { emoji: "✨", label: "Clássicos", poster: "/posters/4.png" },
-  { emoji: "🇰🇷", label: "K-Dramas", poster: "/posters/5.png" },
-  { emoji: "🌸", label: "Favoritos", poster: "/posters/6.png" },
-  { emoji: "✨", label: "Clássicos", poster: "/posters/7.png" },
-  { emoji: "🇰🇷", label: "K-Dramas", poster: "/posters/8.png" },
-  { emoji: "🌸", label: "Favoritos", poster: "/posters/9.png" },
+  { poster: "/posters/1.png" },
+  { poster: "/posters/2.png" },
+  { poster: "/posters/3.png" },
+  { poster: "/posters/4.png" },
+  { poster: "/posters/5.png" },
+  { poster: "/posters/6.png" },
+  { poster: "/posters/7.png" },
+  { poster: "/posters/8.png" },
+  { poster: "/posters/9.png" },
 ]
 
 // ---------------------------------------------------------------------------
