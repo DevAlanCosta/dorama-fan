@@ -1,6 +1,6 @@
 import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
-// import { TrustBar } from "@/components/trust-bar"
+import { TrustBar } from "@/components/trust-bar"
 import { CatalogSection } from "@/components/catalog-section"
 import { Benefits } from "@/components/benefits"
 import { Experience } from "@/components/experience"
